@@ -1,4 +1,4 @@
-package ru.ssau.tk.Goose_kr.Game_TP;
+package ru.ssau.tk.Goose_kr.Game_TP.Game;
 
 import java.util.Scanner;
 
