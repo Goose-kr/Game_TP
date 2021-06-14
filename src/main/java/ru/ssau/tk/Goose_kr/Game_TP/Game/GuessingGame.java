@@ -1,5 +1,6 @@
 package ru.ssau.tk.Goose_kr.Game_TP.Game;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 public class GuessingGame {
@@ -12,7 +13,8 @@ public class GuessingGame {
             System.out.println("Player 1 enter secret number (range 0 - 100): ");
             number = input.nextInt();
         }while (number < 0 || number > 100);
-        clearConsole();
+        //clearScreen();
+        //clearConsole();
 
         int guess = 0;
         int tries = 0;
@@ -40,7 +42,7 @@ public class GuessingGame {
         }
     }
 
-    private final static void clearConsole() {
+   /* private final static void clearConsole() {
 
         try
         {
@@ -55,9 +57,14 @@ public class GuessingGame {
                 Runtime.getRuntime().exec("clear");
             }
         }
-        catch (final Exception e)
+
+        catch (IOException e )
         {
-            //  Handle any exceptions.
+            e.printStackTrace();
         }
-    }
+    }*/
+    /*public static void clearScreen() {
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
+    }*/
 }
